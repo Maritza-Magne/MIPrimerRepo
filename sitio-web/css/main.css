@@ -1,0 +1,351 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background: #030712;
+  color: #fff;
+}
+
+/*=================CABECERA===============*/
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.logo {
+  margin-left: 40px;
+  font-size: 50px;
+}
+.logo a{
+  color: #ffff
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin-left: auto;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffff;
+}
+.boton-descarga{
+padding: 0 60px;
+}
+.boton{
+  padding: 10px 20px;
+  border-style: none;
+  background:linear-gradient(#0ebeff, #4268ff);
+  border-radius: 25px;
+  color: #ffff;
+  font-weight: 750;
+  text-decoration: none;
+}
+/*=====================SEUDO CLASE de CABECERA=========================*/
+.menu a:hover{
+  color: #0ebeff;
+}
+.boton:hover{
+  background:linear-gradient(#4268ff, #0ebeff);
+  transform: scale(1.05);
+}
+/*=====================Main=========================*/
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contenido {
+  max-width: 900px;
+  position: relative;
+  margin-bottom: 20px;
+  right: 100px;
+  top: 100px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.mano {
+  font-size: 48px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.info {
+  display: inline-block;
+  gap: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 70px;
+  right: 100px;
+  vertical-align: middle;
+}
+
+.icono-ubicacion, 
+.icono-email{
+  margin-right: 10px;
+}
+.perfil-foto {
+  width: 350px;
+  height: 450px;
+  overflow: hidden;
+  background:linear-gradient(#030712, #376670);
+  position: relative;
+  left: 1250px;
+  top: -400px;
+  border: 8px solid #030712;
+  box-shadow: 25px 25px 0px rgba(105, 100, 100, 0.9);
+}
+.perfil-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  top: 50px;
+  left: 300px;
+}
+
+.social a{
+  font-size: 30px;
+  color: #ffff;
+}
+
+/*==================Sobre MI=============================*/
+h3{
+  font-size: 20px;
+  position: relative;
+  left: 50%; 
+  top: 30px;
+  background-color: #111827;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px; 
+  box-shadow: 0 4px 9px rgba(92, 90, 90, 0.4); 
+  width: max-content; 
+  height: auto; 
+}
+h2{
+  position: relative;
+  left: 1100px;
+}
+.resumen p{
+  position: relative;
+  left: 1100px;
+  width: 600px;
+  color: #a2a5a5;
+  font-size: 15px;
+}
+.perfil-foto2 {
+  width: 500px;
+  height: 600px;
+  overflow: hidden;
+  background:linear-gradient(#030712, #376670);
+  position: relative;
+  left: 450px;
+  top: -650px;
+  border: 8px solid #030712;
+  box-shadow: 25px 25px 0px rgba(105, 100, 100, 0.9);
+}
+.perfil-foto2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*==================Herramientas=============================*/
+.conocimiento, .aprendisaje{
+position: relative;
+left: 710px;
+top: 60px;
+font-size: 25px;
+}
+.recuadro {
+  width: 700px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  position: relative;
+  top: 100px;
+}
+
+.skill {
+  text-align: center;
+  position: relative;
+  left: 640px;
+  padding: 20px;
+  background: linear-gradient(45deg, #0ebeff, #4268ff); /* Degradado */
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+}
+
+.skill i{
+  font-size: 60px;
+  background: linear-gradient(45deg, #0ebeff, #4268ff); /* Degradado */
+  -webkit-background-clip: text; /* Clipa el fondo al área del texto */
+  -webkit-text-fill-color: transparent; /* Hace que el icono sea transparente */
+  background-clip: text; /* Necesario para otros navegadores */
+}
+
+.skill-text {
+  display: block;
+  font-size: 16px;
+  color: #ffff;
+}
+section{
+  padding: 30px;
+  margin-left: -20px;
+}
+.skill i:hover{
+  background: linear-gradient(45deg, #4268ff, #0ebeff); /* Degradado */
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  transform: translateY(-10px); 
+}
+
+/*==================Contacto=============================*/
+.container-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.formulario {
+  width: 60%;
+}
+
+.formulario p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #a2a5a5;
+}
+.formulario h5{
+  font-size: 17px;
+}
+
+.campo {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  background-color: #1f2937;
+  color: #fff;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  height: 90px;
+}
+
+.info-contacto {
+  width: 35%;
+}
+
+.info-contacto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  width: 450px;
+  height: 250px;
+  object-fit:cover
+}
+
+.icono-logo i {
+  font-size: 40px;
+  color: #0bcbec;
+  margin-bottom: 20px;
+}
+
+.info-contacto p {
+  margin: 20px px;
+  font-size: 15px;
+}
+.icono{
+  padding: 0 15px 0 0
+}
+.icono i {
+  color: #0bcbec;
+  font-size: 22px;
+}
+/*==================Trabajos=============================*/
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  position: relative;
+  top: 170px;
+  left: 320px;
+}
+.project {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #0ebeff;
+  overflow: hidden;
+  margin-bottom: 10px;
+  width: 25%;
+}
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  padding: 15px;
+  text-align: center;
+}
+h6{
+  font-size: 25px;
+  position: relative;
+  top: -100px;
+  left: 250px;
+}
+h7 {
+  color: #111827;
+  margin: 10px 0 5px;
+}
+.texto {
+  color: #555;
+  margin: 0;
+}
